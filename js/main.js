@@ -1,9 +1,9 @@
-//index
+//index.html
 
 var elemento = document.getElementById("log-in");
-elemento.addEventListener("click", validar);
+elemento.addEventListener("click", iniciar);
 
-function validar() {
+function iniciar() {
     // inputs del usuario (datos a llenar en el formulario)
     var mail = document.getElementById("input-mail").value;
     var password = document.getElementById("input-psw").value;
@@ -21,6 +21,7 @@ function validar() {
  		window.location.href = "instagram.html";
  	}
  };
+
 //esta funciòn es para poder mover nuestras fotos en la página de instagram (arrastrar y soltar) 
 function drag(ev){
 	ev.dataTransfer.setData("text", ev.target.id);
@@ -30,11 +31,12 @@ function finalDrop(ev) {
 	// preventDefault() cancela la acción o respuesta "por defecto" que implica hacer click en algo, tal como se mostró en clases 
 	ev.preventDefault();
 }
+
 function drop(ev) {
 	ev.preventDefault();
 	
 	var dato = ev.dataTransfer.getData("text");
-	// objetivo(target) hijo de dato(navegando)
+	// target ahora pasa a ser hijo de dato
 	ev.target.appendChild(document.getElementById(dato));
 }
 

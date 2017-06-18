@@ -42,7 +42,7 @@
 						<div class="form-group">
 							<input type="password" class="form-control" id="input-psw" placeholder="********">
 						</div>
-						<button type="button" class="btn-primary-sesion" id="log-in">Iniciar sesión</button>
+						<button type="button" id="log-in" class="btn-primary-sesion">Iniciar sesión</button>
 						<p class="col-xs-12 col-sm-12">¿Has olvidado tu información de inicio de sesión? <span>Obtén ayuda.</span></p>
 						<p class="lines"><span><i class="circle-icon fa fa-circle-o" aria-hidden="true"></i></span></p>
 						<div class="fcbk"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> Iniciar sesión con Facebook</div>
@@ -57,10 +57,11 @@
 		</div>
 	</section>
 
-	<!-- JAVASCRIPT es preferible como ultima linea en el body -->
+	<!-- JAVASCRIPT es preferible como última línea en el body -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js" defer></script>
+	<script>elemento.addEventListener('click', iniciar);</script>
 </body>
 </html>
 

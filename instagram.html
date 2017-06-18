@@ -1,9 +1,70 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Instagram</title>
+	<!-- Resp	 sive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CDN Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- CDN font-awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+	<!-- estilos CSS -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<!-- First section caja donde arrastrar las fotos -->
+	<section class="part-one-up" ondrop="drop(event)" ondragover="finalDrop(event)">
+		<div class="container">
+			<div class="row">
+				<!--part one, dividida en dos cajas-->
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 box-1"></div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 box-2"></div>
+				<!-- part two -->
+				<div class="col-lg-6 col-sm-6 col-xs-6 box-3"></div>
+			</div>
+		</div>
+	</section>
+	<img src="img/photobooth.png" class="img-responsive-photobooth" alt="photobooth">
 
-</body>
-</html>
+	<!-- Sección de abajo donde estàn las fotos que luego arrastraremos hacia la secciòn 1 -->
+	<section class="part-two-down gallery">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic1.jpg" alt="pic 1" class="img-responsive" id="pic1" draggable="true" ondragstart="drag(event)">
+				</div>
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic2.jpg" alt="pic 2" class="img-responsive" id="pic2" draggable="true" ondragstart="drag(event)">
+				</div>
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic3.jpg" alt="pic 3" class="img-responsive" id="pic3" draggable="true" ondragstart="drag(event)">
+				</div>
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic4.jpg" alt="pic 4" class="img-responsive" id="pic4" draggable="true" ondragstart="drag(event)">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic5.jpg" alt="pic 5" class="img-responsive" id="pic5" draggable="true" ondragstart="drag(event)">
+				</div>
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic6.jpg" alt="pic 6" class="img-responsive" id="pic6" draggable="true" ondragstart="drag(event)">
+				</div>
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic7.jpg" alt="pic 7" class="img-responsive" id="pic7" draggable="true" ondragstart="drag(event)">
+				</div>
+				<div class="col-sm-3 col-xs-3 text-center">
+					<img src="img/pic8.jpg" alt="pic 8" class="img-responsive" id="pic8" draggable="true" ondragstart="drag(event)">
+				</div>
+
+			</div>
+		</section>
+		<!-- JAVASCRIPT es preferible como última línea en el body -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+	</html>
