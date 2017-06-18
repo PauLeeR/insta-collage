@@ -22,11 +22,12 @@ body {
 	background: linear-gradient(to bottom left, #61b58d, #c5774f); /* Standard syntax (must be last) */
 }
 
-.img-responsive { /*logo instagram*/
-	width: 50vh;
+img.img-responsive-instagram { /*logo instagram*/
+	width: 40vh;
 	text-align: center;
 	margin-top: 60px;
 	margin-bottom: 50px;
+	border: none;
 }
 
 .form-control {
